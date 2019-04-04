@@ -6,3 +6,32 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+* { /* prevents browser from adding elements automatically */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* properties related to fonts are normally inherited */
+    /* font-fam will be inherited by all child elems of the body---more efficient and better than putting font-fam in * */
+    color: #777;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 30px;
+}
+
+.header {
+    /* gradient comes before bck-img */
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(127, 213, 112, 0.801), 
+        rgba(40, 180, 133, 0.801)), 
+        url("../img/hero.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 95vh;
+}
