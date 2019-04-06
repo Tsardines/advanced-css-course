@@ -35,4 +35,42 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* top-l, top-r, bottom-r, bottom-l */
     height: 95vh;
+    position: relative;
+}
+
+.logo-box {
+    left: 40px;
+    position: absolute;
+    top: 40px;
+}
+
+.logo {
+    height: 35px;
+    /* width is set by browser */
+}
+
+.text-box {
+    left: 50%;
+    position: absolute;
+    top: 50%; /* X% of the height of the parent (.header) */
+    transform: translate(-50%, -50%); /* these are in relation to the elem itself */
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 16px;
 }
