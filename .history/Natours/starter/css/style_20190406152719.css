@@ -57,7 +57,7 @@ body {
 }
 
 .heading-primary {
-    backface-visibility: hidden; /* Hides/shows the back face of two rotated <divs>. Hides anim shake */
+   /* backface-visibility: hidden; /* Hides/shows the back face of two rotated <divs>. Hides anim shake */
     color: #fff;
     text-transform: uppercase;
 }

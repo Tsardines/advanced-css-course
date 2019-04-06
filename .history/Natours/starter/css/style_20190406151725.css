@@ -57,17 +57,13 @@ body {
 }
 
 .heading-primary {
-    backface-visibility: hidden; /* Hides/shows the back face of two rotated <divs>. Hides anim shake */
     color: #fff;
     text-transform: uppercase;
 }
 
 .heading-primary-main {
-    /* animation-iteration-count: 3; */
-    /* animation-delay: 1s; */
-    animation-duration: 1s;
     animation-name: moveInLeft;
-    animation-timing-function: ease-out; /* how fast an anim will proceed over time */
+    animation-duration: 1s;
 
     display: block;
     font-size: 60px;
@@ -76,7 +72,6 @@ body {
 }
 
 .heading-primary-sub {
-    animation: moveInRight 1s ease-out; /* shorthand */
     display: block;
     font-size: 20px;
     font-weight: 400;
@@ -87,11 +82,11 @@ body {
 @keyframes moveInLeft {
     0% { /* when animation starts */
         opacity: 0;
-        transform: translateX(-100px); /* direction = right */
+        transform: translateX(-100px);
     }
 
     80% {
-        transform: translateX(10px); /* 20px means the anim goes a bit more to the right */
+        transform: translateX(20px); /* 20px means the anim goes a bit more to the right */
     }
 
     /* can put any % in between */
@@ -99,21 +94,5 @@ body {
     100% { /* when anim ends */
         opacity: 1;
         transform: translate(0); /* 0 = will look the same as it does by default */
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-
-    80% {
-        transform: translateX(-10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
     }
 }

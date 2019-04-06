@@ -57,7 +57,6 @@ body {
 }
 
 .heading-primary {
-    backface-visibility: hidden; /* Hides/shows the back face of two rotated <divs>. Hides anim shake */
     color: #fff;
     text-transform: uppercase;
 }
@@ -76,7 +75,6 @@ body {
 }
 
 .heading-primary-sub {
-    animation: moveInRight 1s ease-out; /* shorthand */
     display: block;
     font-size: 20px;
     font-weight: 400;
@@ -87,7 +85,7 @@ body {
 @keyframes moveInLeft {
     0% { /* when animation starts */
         opacity: 0;
-        transform: translateX(-100px); /* direction = right */
+        transform: translateX(-100px);
     }
 
     80% {
