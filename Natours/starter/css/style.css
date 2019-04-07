@@ -52,6 +52,7 @@ body {
 .text-box {
     left: 50%;
     position: absolute;
+    text-align: center;
     top: 50%; /* X% of the height of the parent (.header) */
     transform: translate(-50%, -50%); /* these are in relation to the elem itself */
 }
@@ -59,6 +60,7 @@ body {
 .heading-primary {
     backface-visibility: hidden; /* Hides/shows the back face of two rotated <divs>. Hides anim shake */
     color: #fff;
+    margin-bottom: 60px;
     text-transform: uppercase;
 }
 
@@ -116,4 +118,30 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    /* text-align is set at .text-box level */
+    border-radius: 100px;
+    display: inline-block; /* separates div from above text */
+    padding: 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s; /* "all possibilities" */
+    /* transition has to be on initial state */
+}
+
+.btn:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,.2); /* x, y, blur */
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    transform: translateY(-1px); /* in relation to .btn:link, not :hover */
+}
+
+.btn-white {
+    background-color: #fff;
 }
